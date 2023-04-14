@@ -1,0 +1,50 @@
+.header {
+	position: fixed;
+	width: 100%;
+	top: 35px;
+	left: 0;
+	z-index: 5;
+	background-color: transparent;
+	transition: all 0.3s ease 0s;
+
+	&__container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		min-height: 51px;
+		@media (max-width: $tablet) {
+			justify-content: space-between;
+		}
+	}
+
+	&__logo {
+		flex: 1 1 auto;
+		position: relative;
+		z-index: 2;
+		margin-right: 20px;
+		@media (max-width: $tablet) {
+			flex: 0;
+		}
+		@media (max-width: $mobile) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 80px;
+			z-index: 2;
+		}
+	}
+
+	// .header__button
+
+	&__button {
+		margin-left: 170px;
+		padding: 16px 10px 16px 10px;
+		max-width: 163px;
+		@media (max-width: $tablet) {
+			margin-left: 10px;
+		}
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Railtrips To Here, There And Everywhere!</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- Header -->
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<!-- Hero -->
+			@@include('html/_hero.htm',{})
+			<!-- Location -->
+			@@include('html/_location.htm',{})
+			<!-- Offers -->
+			@@include('html/_offers.htm',{})
+			<!-- Blog -->
+			@@include('html/_blog.htm',{})
+		</main>
+		<!-- Footer -->
+		@@include('html/_footer.htm',{})
+
+		<!-- ==================================================================== -->
+		<!-- @@include('html/parts/modals.htm',{}) -->
+		<!-- ==================================================================== -->
+
+		@@include('html/default-parts/back-to-top-btn.htm',{})
+		@@include('html/default-parts/preloader.htm',{})
+
+		<!-- ==================================================================== -->
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
